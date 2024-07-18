@@ -13,12 +13,11 @@ function calculateTime(n) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += i;
-        }
-        
     }
     let end = Date.now();
-    let time = (end - start)/1000;
+    let time = (end - start) / 1000; // Convert milliseconds to seconds
     return time;
+}
 
-
-    console.log(calculateTime(100));
+const res = calculateTime(1000000000000000000000000000000000)
+console.log(res)
